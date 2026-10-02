@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
-
     <header class="header">
         <a href="#" class="logo">TMSI</a>
-        <!-- Estrutura menu responsivo -->
-         <!-- Para abrir no celular -->
-
         <button class="menu-toggle" id="menuResponsivo" aria-label="Abrir-Menu">
             <spam class="bar"></spam>
             <spam class="bar"></spam>
             <spam class="bar"></spam>
         </button>
-
         <nav class="nav-menu" id="nav-menu">
             <ul>
                 <li><a href="#paginaInicial">Página Inicial</a></li>
@@ -30,7 +23,6 @@
             </ul>
         </nav>
     </header>
-
 <section id="paginaInicial" class="carousel-section">
     <div class="carousel-container">
         <div class="carousel-slide active slide-1">
@@ -40,18 +32,17 @@
                 <a href="#" class="btn-primary">Mais informações</a>
             </div>
         </div>
-
         <div class="carousel-slide slide-2">
             <div class="carousel-container">
                 <h1>Design</h1>
                 <p>Desenvolvimento frontend</p>
             </div>
         </div>
-
         <div class="carousel-slide slide-3">
             <div class="carousel-container">
                 <h1>Projeto</h1>
                 <p>Desenvolvimento Shark Tank</p>
+                <a href="#contato" class="btn-primary">Mais informações</a>
             </div>
         </div>
             <button class="carousel-btn prev-btn" id="prevBtn">
@@ -60,7 +51,6 @@
             <button class="carousel-btn next-btn" id="nextBtn">
                 <span class="botao direita"></span>
             </button>
-
             <div class="carousel-dots">
                 <span class="dot active" data-index="0"></span>
                 <span class="dot" data-index="1"></span>
@@ -69,14 +59,14 @@
         </div>
     </div>
 </section>
-
 <section id="sobre" class="section">
     <div class="container">
         <h2>Hardware</h2>
-        <div class="grid-2-cols"></div>
+        <div class="grid-2-cols">
         <div class="text-block">
             <p>Identificação recursos componentes físicos</p>
             <p>Como descobrir marca e modelo da placa-mãe</p>
+            <a href="#sobre"></a>
         </div>
         <div class="stats-block">
             <div class="stat-card">
@@ -88,10 +78,40 @@
             </div>
         </div>
     </div>
-
+    </div>
 </section>
+<section id="topicos" class="section bg-light">
+    <div class="container">
+        <h2> Tópicos da Disciplinas</h2>
+        <div class="grid-3-cols">
+            <div class="card">
+                <div class="icon">🖥️  </div>
+                <h3>Desenvolvimento Web</h3>
+                <p>Construção de sites responsivos</p>
+            </div>
+        <div class="card">
+            <div class="icon">🤔 </div>
+            <h3>Ajuda no estudos</h3>
+            <p>Como você precisa de ajuda</p>
+        </div>
+        <div class="card">
+            <div class="icon">👨‍💻  </div>
+            <h3>Funções</h3>
+            <p>Saiba as funções do seu pc</p>
+        </div>
+    </div>
+</section>
+<footer class= "footer">
+    <div class="container grid-footer">
+        <div class="footer-col">
+            <h3>TMSI</h3>
+            <p>Curso Técnico em Manutenção e Suporte em informatica </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026. Todos os direitos reservados</p>
+    </div>
+    
+</footer>
 </body>
-
-<script type="text" src="../js/script.js"></script>
-
-</html>
+<script typ
