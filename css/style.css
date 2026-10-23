@@ -725,6 +725,54 @@
     color: #7f8c8d;
   }
   
+  /* Notificação Toast */
+  .toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    background-color: #2e7d32;
+    color: white;
+  
+    padding: 16px 24px;
+    border-radius: 8px;
+  
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+  
+    transition: all 0.4s ease;
+    z-index: 9999;
+  }
+  
+  /* Quando o toast estiver visível */
+  .toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  
+  /* Ícone de sucesso */
+  .toast-icon {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /* Ajuste para telas pequenas */
+  @media (max-width: 480px) {
+    .toast {
+      left: 16px;
+      right: 16px;
+      top: 16px;
+    }
+  }
+  
   /* ===================================
      18. RESPONSIVIDADE
      =================================== */
